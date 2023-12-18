@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".HijauActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primaryColor"
+        >
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="79dp"
+            android:layout_height="80dp"
+            app:srcCompat="@drawable/tani" />
+
+        <TextView
+            android:id="@+id/H.txt1"
+            android:layout_width="326dp"
+            android:layout_height="96dp"
+            android:fontFamily="@font/poppinsbold"
+            android:layout_marginTop="20dp"
+            android:text="Sayuran Hijau"
+            android:textAlignment="center"
+            android:textColor="#FFF9F9"
+            android:textSize="30sp" />
+
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg"
+        android:layout_marginTop="90dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/rvhijau"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:paddingStart="4dp"
+                tools:listitem="@layout/row_mainv"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
